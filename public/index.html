@@ -5,13 +5,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons">
+    <title>Vue Developer</title>
   </head>
+  <style>
+    button {
+      width: 140px!important;
+    }
+
+    form {
+      width: 65%!important;
+    }
+
+    hr {
+      margin-bottom: 30px;
+    }
+
+    footer {
+      height: auto;
+      width: 100%;
+      margin-top:70px;
+      padding-top: 60px;
+      padding-bottom: 50px;
+    }
+    footer i {
+      font-size: 32px;
+      word-spacing: 7%;
+      width: 10%;
+    }
+    .media {
+      margin-top:10px;
+      font-size: 22px;
+      word-spacing: 20px;
+      width: 100%;
+      display: inline-block;
+      color: green;
+    }
+    .float-left {
+      float: left;
+      margin-left: 40px;
+    }
+    .float-right {
+      float: right;
+      margin-right: 20px;
+    }
+  </style>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+    <!-- Image and text -->
+      <!-- social media -->
+      <div class="text-center media">
+         <span class="float-left"><i class="fab fa-facebook"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-github"></i></span>  <span class="float-right" style="font-size:18px;">Accounts <i class="fas fa-users"></i></span>
+      </div>
     <div id="app"></div>
+    <br/><br/><br/>
+    <h1 class="text-center">Contact Me</h1>
+    <form class="container">
+      <!-- Name input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="form4Example1" class="form-control" />
+        <label class="form-label" for="form4Example1">Name</label>
+      </div>
+
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="form4Example2" class="form-control" />
+        <label class="form-label" for="form4Example2">Email address</label>
+      </div>
+
+      <!-- Message input -->
+      <div class="form-outline mb-4">
+        <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+        <label class="form-label" for="form4Example3">Message</label>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-check d-flex justify-content-center mb-4">
+        <input
+          class="form-check-input me-2"
+          type="checkbox"
+          value=""
+          id="form4Example4"
+          checked
+        />
+        <label class="form-check-label" for="form4Example4">
+          Send me a copy of this message
+        </label>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+    </form>
+    <!-- footer -->
+    <footer>
+    <hr style="margin-bottom:30px;">
+      <div class="container">
+        <div class="row text-center">
+        <p>&copy; Copyright 2020 - CWD</p>
+          <div class="col-md-4">
+            <h3>About</h3>
+            <address>
+              1151 Any St - Some City, State <br/>
+              Phone 555-555-5555
+            </address>
+          </div>
+          <div class="col-md-4">
+            <h3>
+            My Website 
+            </h3>
+              <a href="https://www.clear-web-designs.com" target="_blank">CWD</a> <br/>
+              <a href="https://www.developing4life.com" target="_blank">Profile</a>
+          </div>
+          <div class="col-md-4">
+            <h3>Contact</h3>
+            <p>
+              Support <br/>
+              Manager
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="text-center">
+          <i class="fab fa-facebook"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-github"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js"
+    ></script>
+
+    <!-- <script src="./assets/store/calendar.js"></script> -->
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3603abffb2.js" crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js"
+    ></script>
     <!-- built files will be auto injected -->
   </body>
 </html>
